@@ -1,0 +1,16 @@
+.titleSection {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 60px;
+  text-align: left;
+
+  @media (max-width: 768px) {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 28px;
+    line-height: 28px;
+  }
+}

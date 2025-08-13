@@ -15,10 +15,6 @@
     width: 60px;
     flex-shrink: 0;
 
-    // & img {
-    //   width: 100%;
-    // }
-
     @media (max-width: 768px) {
       width: 40px;
       height: 40px;
@@ -27,7 +23,7 @@
   }
 
   &__title {
-    font-family: var(--font-2); /* используем CSS-переменную, см. ниже */
+    font-family: var(--font-2); 
     font-size: 40px;
     font-weight: 600;
     line-height: 40px;
