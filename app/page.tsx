@@ -1,8 +1,9 @@
-import styles from "./page.module.css"
-import About from "@/components/About"
+
+import Blog from "@/components/Blog"
 
 export default function Home() {
-  return <div className={styles.page}>
-
-  </div>
+  return (
+    <Blog />
+  )
+ 
 }
