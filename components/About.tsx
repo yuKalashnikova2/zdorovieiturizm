@@ -16,7 +16,7 @@ export default function About() {
       </div>
 
       <div className={`${styles.mobile} ${styles.mobile_margin}`}>
-        <h3 className={styles.about__name}>Консультант — Эйюп Ахмет Уйгун</h3>
+        <h3 className={styles.about__name}>Консультант — Баринов Александр Владимирович</h3>
         <p className={styles.about__desc}>
           Опытный специалист в сфере организации оздоровительного туризма.
           Владеет турецким, английским, русским языками, жил в Турции.
