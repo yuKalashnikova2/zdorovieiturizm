@@ -3,7 +3,7 @@
 import Button from "./ui/Button";
 import LabelPrice from "@/components/LabelPrice";
 import useModal from "@/hooks/useModal";
-import styles from "./Form.module.scss";
+import styles from "./FormServices.module.scss";
 
 type FormProps = {
   backgroundImage: string;

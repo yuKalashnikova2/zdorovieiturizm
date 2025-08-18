@@ -15,7 +15,6 @@ export default function Modal() {
     errorPhone,
   } = useModal();
 
-  // локальные поля формы (аналог ref в Vue)
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -26,14 +25,12 @@ export default function Modal() {
   };
 
   return (
-    // v-show аналог: элемент всегда в DOM, но скрывается display:none
     <div
       id="overlay_button"
       className={`${styles.modal} modal`}
       style={{ display: modalClosed ? "flex" : "none" }}
       onClick={closeModal}
     >
-      {/* Transition в Vue опущен; верстка сохранена */}
       <div className={styles["modal__wrapper"]}>
         <div className={styles["modal__border_opacity"]}>
           <div className={styles["modal__border"]}>

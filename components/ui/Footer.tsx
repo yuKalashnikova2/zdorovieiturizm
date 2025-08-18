@@ -20,7 +20,7 @@ export default function Footer() {
           <Link href="#blog">Блог</Link>
         </li>
         <li className={styles.footer__menuItem}>
-          <Link href="#contacts">Контакты</Link>
+          <Link href="/contacts">Контакты</Link>
         </li>
         <li className={styles.footer__menuItem}>
           <Link href="#faq">FAQ</Link>
