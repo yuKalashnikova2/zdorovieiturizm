@@ -10,8 +10,11 @@
   position: relative;
   z-index: 10;
 
+  @media (max-width: 500px) {
+    padding: 40px 10px 40px;
+  }
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;

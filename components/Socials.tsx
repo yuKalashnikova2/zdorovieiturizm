@@ -1,11 +1,9 @@
-import Link from "next/link";
-import Image from "next/image";
-import styles from "./Socials.module.scss";
-import { Fragment } from "react";
+import Link from "next/link"
+import styles from "./Socials.module.scss"
 
 export default function SocialComponent() {
   return (
-    <Fragment>
+    <>
       <div className={styles.social__border_opacity}>
         <div className={styles.social__border}>
           <div className={styles.social}>
@@ -21,12 +19,7 @@ export default function SocialComponent() {
                   rel="noopener noreferrer"
                 >
                   <div className={styles.social__wrapper__item}>
-                    <Image
-                      src="/youtube.svg"
-                      alt="youtube"
-                      width={80}
-                      height={80}
-                    />
+                     <img src="/youtube.svg" alt="youtube" />
                   </div>
                 </Link>
 
@@ -36,12 +29,7 @@ export default function SocialComponent() {
                   rel="noopener noreferrer"
                 >
                   <div className={styles.social__wrapper__item}>
-                    <Image
-                      src="/vkontakte.svg"
-                      alt="vk"
-                      width={80}
-                      height={80}
-                    />
+                      <img src="/vkontakte.svg" alt="youtube" />
                   </div>
                 </Link>
 
@@ -51,12 +39,7 @@ export default function SocialComponent() {
                   rel="noopener noreferrer"
                 >
                   <div className={styles.social__wrapper__item}>
-                    <Image
-                      src="/telegram.svg"
-                      alt="telegram"
-                      width={80}
-                      height={80}
-                    />
+                    <img src="/telegram.svg" alt="youtube" />
                   </div>
                 </Link>
               </div>
@@ -66,6 +49,6 @@ export default function SocialComponent() {
           </div>
         </div>
       </div>
-    </Fragment>
+    </>
   );
 }

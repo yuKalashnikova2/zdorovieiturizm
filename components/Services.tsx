@@ -3,14 +3,14 @@
 import React from 'react';
 import TitleSection from './ui/TitleSection';
 import ServicesCard from './ServicesCard';
-import styles from './Wrapper.module.scss';
+import styles from './Services.module.scss';
 
-export default function Wrapper() {
+export default function Services() {
   return (
     <div className={styles.services} id="services">
       <TitleSection>Наши услуги</TitleSection>
       <div className="mt-20">
-        <p className={styles.services__text}>
+        <p className="services__text">
           Мы предлагаем услуги по пересадке волос, неврологии и хирургии,
           стоматологические услуги и пластические операции в Турции. Наши
           партнёры — это только проверенные клиники и опытные врачи.
