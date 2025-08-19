@@ -51,22 +51,22 @@ export default function Header() {
 
       <ul className={styles.header__menu}>
         <li className={styles["header__menu-item"]}>
-          <Link href="#about">О нас</Link>
+          <Link href="/about">О нас</Link>
         </li>
         <li className={styles["header__menu-item"]}>
           <Link href="/services">Услуги</Link>
         </li>
         <li className={styles["header__menu-item"]}>
-          <Link href="#stages">Этапы</Link>
+          <Link href="/stages">Этапы</Link>
         </li>
         <li className={styles["header__menu-item"]}>
-          <Link href="#blog">Блог</Link>
+          <Link href="/blog">Блог</Link>
         </li>
         <li className={styles["header__menu-item"]}>
           <Link href="/contacts">Контакты</Link>
         </li>
         <li className={styles["header__menu-item"]}>
-          <Link href="#faq">FAQ</Link>
+          <Link href="/faq">FAQ</Link>
         </li>
       </ul>
 
@@ -77,7 +77,7 @@ export default function Header() {
               className={styles.burger__item}
               onClick={() => handleItemClick("about")}
             >
-              <Link href="#about">О нас</Link>
+              <Link href="/about">О нас</Link>
             </li>
             <li
               className={styles.burger__item}
@@ -89,13 +89,13 @@ export default function Header() {
               className={styles.burger__item}
               onClick={() => handleItemClick("stages")}
             >
-              <Link href="#stages">Этапы</Link>
+              <Link href="/stages">Этапы</Link>
             </li>
             <li
               className={styles.burger__item}
               onClick={() => handleItemClick("blog")}
             >
-              <Link href="#blog">Блог</Link>
+              <Link href="/blog">Блог</Link>
             </li>
             <li
               className={styles.burger__item}
@@ -107,7 +107,7 @@ export default function Header() {
               className={styles.burger__item}
               onClick={() => handleItemClick("faq")}
             >
-              <Link href="#faq">FAQ</Link>
+              <Link href="/faq">FAQ</Link>
             </li>
           </ul>
         </nav>

@@ -6,7 +6,6 @@ import AboutCard from "@/components/AboutCard"
 import Question from "@/components/Question"
 import Contacts from "@/components/Contacts"
 
-import styles from "./page.module.scss"
 
 const questionsHair = [
   {
@@ -73,7 +72,7 @@ const questionsHair = [
 export default function HairPage() {
   return (
     <>
-      <div className={styles["section-1"]}>
+      <div>
         <Modal />
         <TitleSection>Пересадка волос в Турции</TitleSection>
         <div className="mt-20">
@@ -87,7 +86,7 @@ export default function HairPage() {
           <FormServices backgroundImage="/sc.jpeg" />
         </div>
       </div>
-      <div className={styles["section-2"]}>
+      <div>
         <TitleSection>Этапы лечения</TitleSection>
         <div className="mt-20">
           <p className="services__text">
@@ -131,7 +130,7 @@ export default function HairPage() {
             максимально комфортной и результативной.
           </p>
         </div>
-        <div className={styles["hair__about__cards"]}>
+        <div className="about__cards">
           <AboutCard
             title="Полный цикл сопровождения"
             desc="Мы берем на себя все: от первой консультации и проведения анализов до успешной операции и вашего комфортного возвращения домой."
@@ -154,9 +153,9 @@ export default function HairPage() {
           />
         </div>
       </div>
-      <div className={styles["section-3"]}>
+      <div>
         <TitleSection>Популярные вопросы</TitleSection>
-        <div className={styles.question__wrapper}>
+        <div>
           {questionsHair.map((question) => (
             <Question
               key={question.id}
