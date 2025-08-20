@@ -1,6 +1,7 @@
 @use "@/app/_variables" as *;
 
 .services-card {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,6 +16,10 @@
     background-repeat: no-repeat;
     padding: 40px 20px 60px 40px;
     height: 405px;
+    @media (max-width: 500px) {
+  margin: 0;
+   padding: 0;
+}
     &::before {
         content: '';
         position: absolute;
@@ -35,7 +40,6 @@
     @media (max-width: 992px) {
         margin: 16px;
         max-height: 315px;
-        // padding: 90px 23px 50px 15px;
     }
     @media (max-width: 768px) {
         margin: 16px;
@@ -87,19 +91,24 @@
         // font-size: 28px;
         margin-top: auto;
         // padding-bottom: 10px;
-        min-width: 283px;
+        min-width: 100%;
         z-index: 100 !important;
         // padding: 0.625rem 5.656rem;
       
     }
     &_border {
-        min-width: 405px;
+        // min-width: 405px;
         border-radius: 120px;
         overflow: hidden;
         display: flex;
         justify-content: center;
         align-items: center;
         box-shadow: 2px 2px 20px 0px #bcbcbc;
+          @media (max-width: 768px) {
+    min-width: 200px;
+    // width: 100%; 
+
+  }
         &::before {
             content: '';
             position: absolute;

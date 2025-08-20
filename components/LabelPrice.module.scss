@@ -30,11 +30,12 @@
 
   @media (max-width: 768px) {
     max-width: 100%;
+    padding: 12px;
   }
 
   @media (max-width: 500px) {
     max-width: 100%;
-    padding: 12px;
+    
   }
 
   &__price {
@@ -53,7 +54,7 @@
     }
 
     @media (max-width: 768px) {
-      font-size: 40px;
+      font-size: 24px;
       line-height: 56px;
     }
 

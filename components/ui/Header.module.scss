@@ -35,9 +35,13 @@
 
     &-item {
       padding: 20px 60px;
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 500;
       line-height: 39.2px;
+
+      @media (max-width: 1600px) {
+            padding: 10px 20px;
+      }
 
       a {
         text-decoration: none;

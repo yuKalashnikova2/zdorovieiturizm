@@ -25,10 +25,10 @@ export default function Blog() {
       {width >= DESKTOP_BREAKPOINT ? (
         <div className={styles.blog} id="blog">
           <div className={styles["blog__wrapper-d"]}>
-            <BlogVideoCard video="https://www.youtube.com/embed/KRRKdk9Jf_s?autoplay=1&mute=1" />
-            <BlogVideoCard video="https://youtube.com/embed/-J48C26AM3I?autoplay=1&mute=1" />
-            <BlogVideoCard video="https://youtube.com/embed/RjtwFyucTR4?autoplay=1&mute=1" />
-            <BlogVideoCard video="https://youtube.com/embed/LxINvpQbYo4?autoplay=1&mute=1" />
+            <BlogVideoCard video="https://vkvideo.ru/video_ext.php?oid=-226278677&id=456239049&hd=2&autoplay=1&mute=1" />
+            <BlogVideoCard video="https://vkvideo.ru/video_ext.php?oid=-226278677&id=456239040&hd=2&autoplay=1&mute=1" />
+            <BlogVideoCard video="https://vkvideo.ru/video_ext.php?oid=-226278677&id=456239033&hd=2&autoplay=1&mute=1" />
+            <BlogVideoCard video="https://vkvideo.ru/video_ext.php?oid=-226278677&id=456239033&hd=2&autoplay=1&mute=1" />
           </div>
         </div>
       ) : (

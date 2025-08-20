@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import styles from "./Header.module.scss";
 
 export default function Header() {
@@ -23,14 +22,9 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles["header-logo"]}>
+       
         <Link href="/">
-          <Image
-            src="/logo.svg"
-            alt="logo"
-            width={120}
-            height={108}
-            className={styles.logoImg}
-          />
+         <img src="/logo.svg" alt="logo" />
         </Link>
       </div>
 
