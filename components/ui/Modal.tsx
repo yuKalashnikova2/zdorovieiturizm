@@ -3,6 +3,7 @@
 import { useState } from "react";
 import useModal from "@/hooks/useModal";
 import styles from "./Modal.module.scss";
+import Button from "./Button";
 
 export default function Modal() {
   const {
@@ -58,9 +59,7 @@ export default function Modal() {
                       <div className={styles["modal__form__input"]}>
                         <label htmlFor="name">
                           Как вас зовут?
-                          {errorName && (
-                            <span style={{ color: "red" }}>*</span>
-                          )}
+                          {errorName && <span style={{ color: "red" }}>*</span>}
                         </label>
                         <input
                           type="text"
@@ -115,9 +114,11 @@ export default function Modal() {
                       </div>
                     </div>
 
-                    <button type="submit" className={styles["modal__btn"]}>
-                      Отправить
-                    </button>
+                    <div onClick={(e) => onSubmit(e)}>
+                      <Button className={styles["modal__btn"]} >
+                        Отправить
+                      </Button>
+                    </div>
 
                     <div className={styles["modal__agree"]}>
                       <span>
