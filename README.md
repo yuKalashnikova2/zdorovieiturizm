@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌍 Здоровье и Туризм — Лечение в Турции
 
-## Getting Started
+Веб-приложение для продажи медицинских услуг в Турции:  
+- Лечение грыжи позвоночника  
+- Терапия алопеции  
+- Эстетическая медицина  
+- Стоматология  
 
-First, run the development server:
+Проект разработан на **Next.js 15** с использованием современных технологий фронтенда и серверных API.
 
+---
+
+##  Технологический стек
+
+**Основные зависимости:**
+- [Next.js 15](https://nextjs.org/) — React-фреймворк для SSR и API Routes  
+- [React 19](https://react.dev/) — библиотека для построения интерфейсов  
+- [Zustand](https://github.com/pmndrs/zustand) — управление состоянием  
+- [Nodemailer](https://nodemailer.com/) — отправка писем через SMTP  
+
+**Dev-зависимости:**
+- TypeScript — статическая типизация  
+- ESLint — линтинг кода  
+- Sass — стилизация  
+
+---
+
+## ⚙️ Запуск проекта
+
+### 1. Клонировать репозиторий
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
 ```
+### 2. Установить зависимости
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+``npm install``
+### 2.Настроить переменные окружения
+Создайте файл .env.local в корне проекта:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+`EMAIL_USER=ваш_email@mail.ru`
+`PASS_USER=пароль_или_app_password`
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Запустить локально
+`npm run dev`
 
-## Learn More
+## 📬 Отправка писем
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Форма записи на сайте отправляет данные на API Route (/api/contacts).
+Для отправки используется Nodemailer с SMTP-сервером.
+Сообщения приходят на указанные адреса из поля to.
